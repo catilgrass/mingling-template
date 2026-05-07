@@ -1,7 +1,19 @@
 [placeholders]
-project-description = { type = "string", prompt = "Project description", default = "A CLI application built with mingling" }
-author-name = { type = "string", prompt = "Author name", default = "" }
-author-email = { type = "string", prompt = "Author email", default = "" }
+project-description = {
+    type = "string",
+    prompt = "Project description",
+    default = "A CLI application built with mingling"
+}
+author-name = {
+    type = "string",
+    prompt = "Author name",
+    default = ""
+}
+author-email = {
+    type = "string",
+    prompt = "Author email",
+    default = ""
+}
 
 [template]
 ignore = [
