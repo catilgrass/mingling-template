@@ -1,10 +1,12 @@
 [package]
-name = "mingling_template"
+name = "{{project-name}}"
 version = "0.1.0"
 edition = "2024"
+description = "{{project-description}}"
+authors = ["{{author-name}} <{{author-email}}>"]
 
 [[bin]]
-name = "mingling_template"
+name = "{{project-name}}"
 path = "src/main.rs"
 
 [dependencies.mingling]
