@@ -9,6 +9,17 @@ authors = ["{{author-name}} <{{author-email}}>"]
 name = "{{project-name}}"
 path = "src/main.rs"
 
+[profile.dev]
+opt-level = 0
+debug = true
+panic = "unwind"
+lto = false
+
+[profile.release]
+opt-level = 3
+panic = "abort"
+lto = true
+
 [dependencies.mingling]
 version = "0.1.7"
 features = ["parser", "comp"]
