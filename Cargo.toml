@@ -1,0 +1,18 @@
+[package]
+name = "mingling_template"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "mingling_template"
+path = "src/main.rs"
+
+[dependencies.mingling]
+version = "0.1.7"
+features = ["parser", "comp"]
+
+[build-dependencies.mingling]
+version = "0.1.7"
+features = ["comp"]
+
+[dependencies]
