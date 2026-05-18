@@ -1,7 +1,6 @@
-use mingling::{
-    ShellContext, Suggest,
-    macros::{completion, help, r_println, suggest},
-};
+use mingling::macros::{help, suggest};
+use mingling::prelude::*;
+use mingling::{ShellContext, Suggest};
 
 use crate::commands::EntryGreet;
 

@@ -1,8 +1,5 @@
-use crate::ThisProgram;
-use mingling::{
-    Groupped,
-    macros::{r_println, renderer},
-};
+use mingling::Groupped;
+use mingling::prelude::*;
 
 #[derive(Debug, Groupped)]
 pub struct ResultGreetSomeone {

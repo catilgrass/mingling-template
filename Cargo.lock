@@ -3,6 +3,13 @@
 version = 4
 
 [[package]]
+name = "A"
+version = "0.1.0"
+dependencies = [
+ "mingling",
+]
+
+[[package]]
 name = "just_fmt"
 version = "0.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -19,9 +26,9 @@ dependencies = [
 
 [[package]]
 name = "mingling"
-version = "0.1.7"
+version = "0.1.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7755900d667c43912a31b1b164061264811c4a93300061a6285920497805749b"
+checksum = "9dd3f889b2c4e5416c641391e932d609bf7ebfc651666a098e007615f30225b5"
 dependencies = [
  "mingling_core",
  "mingling_macros",
@@ -30,34 +37,26 @@ dependencies = [
 
 [[package]]
 name = "mingling_core"
-version = "0.1.7"
+version = "0.1.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e12e0ee263a48336b5a16598a89c2220524af7a0267227160ebed1364ff0a741"
+checksum = "0df6a42e46dade5788072687c887e15a980d1d16ab5dc2a98c65d47cf6a82993"
 dependencies = [
  "just_fmt",
  "just_template",
  "once_cell",
- "thiserror",
 ]
 
 [[package]]
 name = "mingling_macros"
-version = "0.1.7"
+version = "0.1.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b7af9a980ada645d77113c0d39877d6a3d3861b271ceb8a1b6bb804177697ad8"
+checksum = "ae2140e7f48e6e73ebaa3bea51eeb89e6caf52d6d48c47b1337a00fa1912ea07"
 dependencies = [
  "just_fmt",
  "once_cell",
  "proc-macro2",
  "quote",
  "syn",
-]
-
-[[package]]
-name = "mingling_template"
-version = "0.1.0"
-dependencies = [
- "mingling",
 ]
 
 [[package]]
@@ -99,26 +98,6 @@ dependencies = [
  "proc-macro2",
  "quote",
  "unicode-ident",
-]
-
-[[package]]
-name = "thiserror"
-version = "2.0.18"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4288b5bcbc7920c07a1149a35cf9590a2aa808e0bc1eafaade0b80947865fbc4"
-dependencies = [
- "thiserror-impl",
-]
-
-[[package]]
-name = "thiserror-impl"
-version = "2.0.18"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ebc4ee7f67670e9b64d05fa4253e753e016c6c95ff35b89b7941d6b856dec1d5"
-dependencies = [
- "proc-macro2",
- "quote",
- "syn",
 ]
 
 [[package]]

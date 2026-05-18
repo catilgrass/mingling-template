@@ -1,15 +1,12 @@
-use mingling::{
-    macros::{chain, dispatcher},
-    parser::AsPicker,
-};
+use mingling::prelude::*;
 
-use crate::{ThisProgram, renderers::greet_someone::ResultGreetSomeone};
+use crate::renderers::ResultGreetSomeone;
 
 // Greet Dispatcher
 dispatcher!("greet", CommandGreet => EntryGreet);
 
 #[chain]
-pub fn state_parse_greet(prev: EntryGreet) -> NextProcess {
+pub fn state_parse_greet(prev: EntryGreet) -> Next {
     let name = prev.pick_or::<String>((), "World").unpack();
     ResultGreetSomeone { name }
 }

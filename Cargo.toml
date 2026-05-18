@@ -17,15 +17,17 @@ lto = false
 
 [profile.release]
 opt-level = 3
+# If you need to use exec_panic hook, enable `unwind`
+# panic = "unwind"
 panic = "abort"
 lto = true
 
 [dependencies.mingling]
-version = "0.1.7"
+version = "0.1.8"
 features = ["parser", "comp"]
 
 [build-dependencies.mingling]
-version = "0.1.7"
-features = ["comp"]
+version = "0.1.8"
+features = ["builds", "comp"]
 
 [dependencies]

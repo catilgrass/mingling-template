@@ -7,18 +7,15 @@ use helps::*;
 mod renderers;
 use renderers::*;
 
-use crate::commands::greet::CommandGreet;
-
-use mingling::{
-    macros::{r_println, renderer},
-    setup::BasicProgramSetup,
-};
+use mingling::prelude::*;
+use mingling::setup::{BasicProgramSetup, ExitCodeSetup};
 
 fn main() {
     let mut program = ThisProgram::new();
 
     // Plugins
     program.with_setup(BasicProgramSetup);
+    program.with_setup(ExitCodeSetup::default());
     program.with_dispatcher(CompletionDispatcher);
 
     // Dispatchers
