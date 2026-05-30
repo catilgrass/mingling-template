@@ -3,7 +3,7 @@
 version = 4
 
 [[package]]
-name = "A"
+name = "aaa"
 version = "0.1.0"
 dependencies = [
  "mingling",
@@ -26,9 +26,9 @@ dependencies = [
 
 [[package]]
 name = "mingling"
-version = "0.1.8"
+version = "0.1.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9dd3f889b2c4e5416c641391e932d609bf7ebfc651666a098e007615f30225b5"
+checksum = "621395235f09ecf227467d6900c3ae86c4f194d504dea007603d6b7e95458364"
 dependencies = [
  "mingling_core",
  "mingling_macros",
@@ -37,33 +37,25 @@ dependencies = [
 
 [[package]]
 name = "mingling_core"
-version = "0.1.8"
+version = "0.1.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0df6a42e46dade5788072687c887e15a980d1d16ab5dc2a98c65d47cf6a82993"
+checksum = "99628c909d5f1824771e378399024e3c8f8f880a1e1e6b34ac03df67ed15d9c2"
 dependencies = [
  "just_fmt",
  "just_template",
- "once_cell",
 ]
 
 [[package]]
 name = "mingling_macros"
-version = "0.1.8"
+version = "0.1.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ae2140e7f48e6e73ebaa3bea51eeb89e6caf52d6d48c47b1337a00fa1912ea07"
+checksum = "01c878eabe0a08c7c394e868591cbcdbdb75460cb2f8f0dab7645583b9604340"
 dependencies = [
  "just_fmt",
- "once_cell",
  "proc-macro2",
  "quote",
  "syn",
 ]
-
-[[package]]
-name = "once_cell"
-version = "1.21.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9f7c3e4beb33f85d45ae3e3a1792185706c8e16d043238c593331cc7cd313b50"
 
 [[package]]
 name = "proc-macro2"

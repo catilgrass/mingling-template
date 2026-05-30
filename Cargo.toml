@@ -23,11 +23,15 @@ panic = "abort"
 lto = true
 
 [dependencies.mingling]
-version = "0.1.8"
-features = ["parser", "comp"]
+version = "0.1.9"
+features = [
+    "parser",
+    "comp",
+    "extra_macros"
+]
 
 [build-dependencies.mingling]
-version = "0.1.8"
+version = "0.1.9"
 features = ["builds", "comp"]
 
 [dependencies]

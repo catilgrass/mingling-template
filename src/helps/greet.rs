@@ -1,11 +1,13 @@
-use mingling::macros::{help, suggest};
-use mingling::prelude::*;
-use mingling::{ShellContext, Suggest};
+use mingling::{
+    ShellContext, Suggest,
+    macros::{help, suggest},
+    prelude::*,
+};
 
 use crate::commands::EntryGreet;
 
 #[help]
-pub fn help_greet(_prev: EntryGreet) {
+pub fn help_greet(_p: EntryGreet) {
     r_println!(
         "{}",
         r"
@@ -19,7 +21,7 @@ Example: greet Alice
 }
 
 #[completion(EntryGreet)]
-pub fn comp_greet(_ctx: &ShellContext) -> Suggest {
+pub fn complete_greet(_ctx: &ShellContext) -> Suggest {
     suggest! {
         "Alice",
         "Bob",
